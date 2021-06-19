@@ -1,0 +1,27 @@
+{
+  "name": "open-genius-lyric",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --watch"
+  },
+  "devDependencies": {
+    "web-ext-plugin": "^1.2.0",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "eslintConfig": {
+    "env": {
+      "commonjs": true,
+      "node": true
+    },
+    "rules": {
+      "prefer-arrow-callback": "off"
+    }
+  }
+}

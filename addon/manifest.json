@@ -1,0 +1,26 @@
+{
+
+  "description": "Developed based on https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#open-my-page-button",
+  "manifest_version": 2,
+  "name": "open-my-page",
+  "version": "1.0",
+  "homepage_url": "https://github.com/sorrykim/open-genius-lyric",
+  "icons": {
+    "48": "icons/page-48.png"
+  },
+
+  "background": {
+    "scripts": ["background/index.js"]
+  },
+
+  "content_scripts": [{
+    "matches": ["https://open.spotify.com/*"],
+    "js": ["content/index.js"]
+  }],
+
+  "browser_action": {
+    "default_icon": "icons/page-32.png"
+  },
+
+  "permissions": ["activeTab"]
+}
