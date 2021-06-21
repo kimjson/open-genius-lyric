@@ -22,5 +22,5 @@
     "default_icon": "icons/logo-32.png"
   },
 
-  "permissions": ["activeTab"]
+  "permissions": ["activeTab", "https://genius.com/*"]
 }
